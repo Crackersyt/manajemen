@@ -1,5 +1,33 @@
+<?php
+require_once('fungsi.php');
+
+if(!empty($_SESSION["id"])){
+  header("Location: dashboard.html");
+}
+
+$login = new Login();
+
+if(isset($_POST["submit"])){
+  $result = $login->login($_POST["username"], $_POST["password"]);
+
+  if($result == 1){
+    $_SESSION["login"] = true;
+    $_SESSION["id"] = $login->idUser();
+    header("Location: dashboard.html");
+  }
+  elseif($result == 10){
+    echo
+    "<script> alert('Password Salah'); </script>";
+  }
+  elseif($result == 100){
+    echo
+    "<script> alert('Pengguna tidak terdaftar'); </script>";
+  }
+}
+?>
 <!DOCTYPE html>
 <html lang="en">
+  
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -27,11 +55,12 @@
     <title>Document</title>
   </head>
   <body>
+    
     <div class="container">
       <h1>Login</h1>
 
       <!-- Form -->
-      <form action="" class="form">
+      <form action="" class="form" method="POST">
         <!-- Username Start -->
 
         <div class="user-box">
@@ -39,7 +68,7 @@
             <i class="fa-solid fa-user"></i>
           </div>
           <div class="user-input">
-            <input type="text" class="input-us" name="username" id="username" />
+            <input type="text" class="input-us" name="username" id="username" placeholder="Username" />
           </div>
         </div>
 
@@ -54,12 +83,13 @@
               class="pass-input"
               name="password"
               id="password"
+              placeholder="password"
             />
           </div>
         </div>
 
         <!-- Login submit -->
-        <button type="submit" class="btn">Login</button>
+        <button type="submit" name="submit"class="btn">Login</button>
 
         <!-- Register -->
         <div class="daftar">
