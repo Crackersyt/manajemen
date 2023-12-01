@@ -1,0 +1,226 @@
+:root {
+  --primary: #28c9ff;
+  --bg: #dadada;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  border: none;
+  outline: none;
+  text-decoration: none;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #ffffff;
+}
+
+.navbar {
+  width: 100%;
+  height: 3.9rem;
+  background-color: rgb(231, 231, 231);
+  border-bottom: 1px solid rgb(0, 0, 0, 0.5);
+  box-shadow: 0px 0px 30px black;
+  display: flex;
+}
+
+.menu {
+  padding: 0.8rem 3rem;
+}
+
+.menu .menu-icon {
+  font-size: 1.5rem;
+  color: #646464;
+  cursor: pointers;
+}
+
+.search-box {
+  display: flex;
+  background-color: var(--bg);
+  padding: 0.5rem 1rem;
+  border-radius: 3px;
+  border: 1px solid var(--bg);
+  margin-top: 0.6rem;
+  height: 2.7rem;
+  width: 15rem;
+}
+
+.search-box .icon {
+  outline: none;
+  border: none;
+  background: unset;
+  padding-left: 10px;
+  width: 12rem;
+}
+
+.icon {
+  background-color: #dadada;
+}
+
+.admin {
+  position: absolute;
+  top: 19px;
+  right: 23px;
+}
+
+.admin .link-admin p {
+  font-size: 0.8rem;
+}
+
+.admin .link-admin a {
+  color: #28c9ff;
+  font-weight: 600;
+}
+
+.beranda-text {
+  padding: 1.5rem;
+  color: #646464;
+}
+
+.beranda-box {
+  width: 96%;
+  height: 13rem;
+  margin: 1.5rem;
+  margin-top: 0rem;
+  background-color: var(--bg);
+  border: 1px solid var(--bg);
+  border-top: 5px solid #28c9ff;
+  border-radius: 5px;
+}
+
+.beranda-box .beranda-total {
+  display: flex;
+  justify-content: space-between;
+  margin: 2rem;
+}
+
+.beranda-box .beranda-total a {
+  width: 300px;
+  height: 130px;
+  border-radius: 5px;
+  border-bottom: 30px solid rgb(0, 0, 0, 0.2);
+}
+
+/* Beranda */
+
+.beranda-box .beranda-total .register {
+  background-color: rgb(55, 179, 55);
+}
+
+.beranda-box .beranda-total .register p {
+  margin: 0.3rem 1rem;
+  font-size: 0.9rem;
+  color: white;
+  font-weight: 800;
+  font-size: 1.9rem;
+}
+
+.beranda-box .beranda-total .register span {
+  position: relative;
+  top: 0px;
+  left: 1rem;
+  margin-top: 3rem;
+  padding-left: -5rem;
+  color: white;
+}
+
+.beranda-box .beranda-total .register i {
+  color: rgba(0, 0, 0, 0.5);
+  margin-left: 12rem;
+  margin-top: -3.5rem;
+  font-size: 4.5rem;
+  display: block;
+}
+
+/* Total user */
+.beranda-box .beranda-total .total {
+  background-color: rgb(55, 105, 179);
+}
+
+.beranda-box .beranda-total .total p {
+  margin: 0.3rem 1rem;
+  font-size: 0.9rem;
+  color: white;
+  font-weight: 800;
+  font-size: 1.9rem;
+}
+
+.beranda-box .beranda-total .total span {
+  position: relative;
+  top: 0px;
+  left: 1rem;
+  margin-top: 3rem;
+  padding-left: -5rem;
+  color: white;
+}
+
+.beranda-box .beranda-total .total i {
+  color: rgba(0, 0, 0, 0.5);
+  margin-left: 12rem;
+  margin-top: -3.5rem;
+  font-size: 4.5rem;
+  display: block;
+}
+
+/* User aktif */
+.beranda-box .beranda-total .aktif {
+  background-color: rgb(171, 179, 55);
+}
+
+.beranda-box .beranda-total .aktif p {
+  margin: 0.3rem 1rem;
+  font-size: 0.9rem;
+  color: white;
+  font-weight: 800;
+  font-size: 1.9rem;
+}
+
+.beranda-box .beranda-total .aktif span {
+  position: relative;
+  top: 0px;
+  left: 1rem;
+  margin-top: 3rem;
+  padding-left: -5rem;
+  color: white;
+}
+
+.beranda-box .beranda-total .aktif i {
+  color: rgba(0, 0, 0, 0.5);
+  margin-left: 12rem;
+  margin-top: -3.5rem;
+  font-size: 4.5rem;
+  display: block;
+}
+
+/* User tidak Aktif */
+
+.beranda-box .beranda-total .tidak-aktif {
+  background-color: rgb(179, 55, 55);
+}
+
+.beranda-box .beranda-total .tidak-aktif p {
+  margin: 0.3rem 1rem;
+  font-size: 0.9rem;
+  color: white;
+  font-weight: 800;
+  font-size: 1.9rem;
+}
+
+.beranda-box .beranda-total .tidak-aktif span {
+  position: relative;
+  top: 0px;
+  left: 1rem;
+  margin-top: 3rem;
+  padding-left: -5rem;
+  color: white;
+}
+
+.beranda-box .beranda-total .tidak-aktif i {
+  color: rgba(0, 0, 0, 0.5);
+  margin-left: 12rem;
+  margin-top: -3.5rem;
+  font-size: 4.5rem;
+  display: block;
+}

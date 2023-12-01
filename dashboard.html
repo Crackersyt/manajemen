@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Fonts -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,400;0,700;1,300;1,700&family=Roboto:wght@300&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- css -->
+    <link rel="stylesheet" href="css/dashboard.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="navbar">
+      <!-- menu icon -->
+      <div class="menu">
+        <div class="menu-icon">
+          <i class="fa-solid fa-bars"></i>
+        </div>
+      </div>
+
+      <!-- search icon -->
+      <div class="search-box">
+        <div class="search-icon">
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </div>
+        <div class="search-input">
+          <input type="search" class="icon" placeholder="Search" />
+        </div>
+      </div>
+
+      <!-- Admin -->
+      <div class="admin">
+        <div class="link-admin">
+          <p>Level akses: <a href="#">Admin</a></p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Text beranda -->
+    <div class="beranda-text">
+      <h1>Beranda</h1>
+    </div>
+
+    <!-- Beranda -->
+    <div class="beranda-box">
+      <div class="beranda-total">
+        <!-- Register Start -->
+        <a href="#register" class="register"
+          ><p>1</p>
+          <span>Register</span>
+          <i class="fa-solid fa-user-plus"></i
+        ></a>
+        <!-- Register end -->
+
+        <!-- total user -->
+        <a href="#total_User" class="total"
+          ><p>10</p>
+          <span>Total User</span>
+          <i class="fa-solid fa-users"></i>
+        </a>
+        <!-- total end -->
+
+        <!-- aktif user -->
+        <a href="user_aktif" class="aktif"
+          ><p>100</p>
+          <span>User Aktif</span>
+          <i class="fa-solid fa-user-check"></i
+        ></a>
+        <!-- aktif end -->
+
+        <!-- tidak aktif -->
+        <a href="user_tidak_aktif" class="tidak-aktif"
+          ><p>0</p>
+          <span>User Tidak Aktif</span>
+          <i class="fa-solid fa-user-xmark"></i
+        ></a>
+        <!-- tidak aktif end -->
+      </div>
+      <div class="beranda-icon"></div>
+    </div>
+  </body>
+</html>
